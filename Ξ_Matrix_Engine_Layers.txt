@@ -1,0 +1,30 @@
+
+Ξ-Matrix Engine: Feature Layer Summary (ML-Only Version)
+
+Included Layers (λ₁–λ₁₅):
+──────────────────────────
+λ₁  - Variance: Statistical spread of drawn numbers
+λ₂  - Standard Deviation: Draw dispersion from the mean
+λ₃  - Normalized Mean: Draw center normalized by max ball value (47)
+λ₄  - Sum of Gaps: Total gap between sorted numbers
+λ₅  - Redundancy Penalty: Penalizes repeated digits in set
+λ₆  - Maximum Gap (Momentum): Largest jump between any two numbers
+λ₇  - Normalized Total: Sum of numbers normalized over draw range
+λ₈  - Randomized Weight 1: Controlled entropy injection
+λ₉  - Randomized Weight 2: Further stochastic signal
+λ₁₀ - Gap Std Deviation: Spread of jump distances
+λ₁₁ - ML Prediction Score: Injected from trained model (Division hit likelihood)
+λ₁₂–λ₁₅ - Random Modulators: Simulate nonlinear chaos/quantum jitter
+
+Excluded Layer:
+──────────────────────────
+λ₁₆ - Hilbert Similarity (Quantum Layer): Removed for compatibility and stability.
+
+Core Components:
+──────────────────────────
+- xi_matrix_engine.py — Prediction engine using 15 features
+- reflexive_trainer.py — ML trainer with random forest classifier
+- Oz_Lotto_Historical_Draws.csv — Real draw data
+- app.py — Dual-tab Streamlit interface for generation + retraining
+
+This setup provides a complete, extensible ML-based predictive engine optimized for Oz Lotto modeling.

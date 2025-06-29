@@ -1,3 +1,4 @@
+--only-binary=:all:
 numpy==1.26.2
 Cython==3.0.8
 streamlit==1.25.0
